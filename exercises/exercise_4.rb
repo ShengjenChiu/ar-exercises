@@ -7,9 +7,9 @@ puts "Exercise 4"
 puts "----------"
 
 # Your code goes here ...
-surrey  = Store.create(annual_revenue: 224000, womens_apparel: true)
-whistler = Store.create(annual_revenue: 1900000, mens_apparel: true)
-yaletown = Store.create(annual_revenue: 430000, mens_apparel: true, womens_apparel: true)
+surrey  = Store.create(annual_revenue: 224000, womens_apparel: true, name: 'Surrey')
+whistler = Store.create(annual_revenue: 1900000, mens_apparel: true, name: 'Whistler')
+yaletown = Store.create(annual_revenue: 430000, mens_apparel: true, womens_apparel: true, name: 'Yaletown')
 
 # 2. Assign the results to a variable `@mens_stores`.
 @mens_stores = Store.where(mens_apparel: true)
